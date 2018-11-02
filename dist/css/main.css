@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+   @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 html {
     color: #222;
     font-size: 1em;
@@ -97,8 +97,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(48px + 6vw);  
+    margin: 0;
+    text-transform: uppercase;
+}
 
+h1 span {
+    color: red;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+ }
+ #nav {
+    background-color: #000000;
+}
 
+#nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ nav a {
+    text-decoration: none;
+    color: rgb(4, 23, 187);
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(233, 7, 157);
+    margin: 10px;
+ }
+
+   nav {
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: calc(32px + 4vw); */
+    /* width: 40%; */
+    float: left;
+   }
+
+   nav a {
+    font-family: 'Montserrat', sans-serif;
+       color: black;
+       display: block;
+       text-decoration: none;
+       transition: .2s;
+       text-transform: uppercase;
+
+   }
+
+   nav a:hover {
+       color: red;
+   }
+
+/* article {
+    float: left;
+    width: 60%;
+    height: 600px;
+    background: black;
+    display: block;
+} */
 
 
 
